@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration xmlns="http://www.jooq.org/xsd/jooq-codegen-3.4.0.xsd">
+	<!-- Configure the database connection here -->
+	<jdbc>
+		<driver>org.postgresql.Driver</driver>
+		<url>jdbc:postgresql://localhost:5432/liquid_feedback</url>
+		<user>liquid</user>
+		<password>liquid</password>
+	</jdbc>
+
+	<generator>
+		<!-- The default code generator. You can override this one, to generate 
+			your own code style Defaults to org.jooq.util.DefaultGenerator -->
+		<name>org.jooq.util.DefaultGenerator</name>
+
+		<database>
+			<!-- The database type. The format here is: org.util.[database].[database]Database -->
+			<name>org.jooq.util.postgres.PostgresDatabase</name>
+			<outputSchemaToDefault>true</outputSchemaToDefault>
+			<!-- The database schema (or in the absence of schema support, in your 
+				RDBMS this can be the owner, user, database name) to be generated -->
+			<inputSchema>public</inputSchema>
+
+			<!-- All elements that are generated from your schema (A Java regular 
+				expression. Use the pipe to separate several expressions) Watch out for case-sensitivity. 
+				Depending on your database, this might be important! -->
+			<includes>.*</includes>
+
+			<!-- All elements that are excluded from your schema (A Java regular expression. 
+				Use the pipe to separate several expressions). Excludes match before includes -->
+			<excludes></excludes>
+		</database>
+		<generate>
+
+			<relations>true</relations>
+			<globalObjectReferences>true</globalObjectReferences>
+			<immutablePojos>true</immutablePojos>
+
+			<!-- Generate interfaces that will be implemented by records and/or pojos. 
+				You can also use these interfaces in Record.into(Class<?>) and similar methods, 
+				to let jOOQ return proxy objects for them. Defaults to false -->
+			<interfaces>true</interfaces>
+
+			<records>true</records>
+			<!-- Generate DAOs in addition to POJO classes Defaults to false -->
+			<daos>true</daos>
+			<pojos>true</pojos>
+		</generate>
+
+		<target>
+			<!-- The destination package of your generated classes (within the destination 
+				directory) -->
+			<packageName>org.liquidfeedback.generated</packageName>
+
+			<!-- The destination directory of your generated classes -->
+			<directory>XXX\liquidfeedback\src\main\java
+			</directory>
+		</target>
+	</generator>
+</configuration>

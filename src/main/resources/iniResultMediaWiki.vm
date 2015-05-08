@@ -1,0 +1,19 @@
+{{SMVBErgebnis
+|ID=$!{issueId}
+|Antragstitel=$!{iniTitle}
+|Ja=$!{yes}
+|Nein=$!{no}
+|Enth=$!{abstention}
+|Ergebnis=$!{result}
+|Eingestellt=$!{created}
+|Diskussion=$!{discussed}
+|Halb-Eingefroren= $!{halffrozen}
+|Eingefroren= $!{frozen}  
+|Abstimmung=$!{voted}
+|Ende=$!{end}
+|Abgebrochen=$!{canceled}
+|Zurückgezogen=$!{withdrawn}
+|Schulzesieger=$!{iniSchulze} $!{issueSchulze} 
+|Antragstext/Drafts=$!{description}
+|Anregungen/Suggestions=$!{suggestions}
+}}
