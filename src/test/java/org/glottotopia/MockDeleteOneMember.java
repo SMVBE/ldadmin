@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.liquidfeedback;
+package org.glottotopia;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -13,9 +13,9 @@ import org.apache.log4j.Logger;
 import org.jooq.DSLContext;
 import org.jooq.SQLDialect;
 import org.jooq.impl.DSL;
-import org.liquidfeedback.generated.routines.DeleteMember;
-import org.liquidfeedback.generated.tables.daos.MemberDao;
-import org.liquidfeedback.generated.tables.pojos.Member;
+import org.glottotopia.generated.routines.DeleteMember;
+import org.glottotopia.generated.tables.daos.MemberDao;
+import org.glottotopia.generated.tables.pojos.Member;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
 import org.springframework.core.env.StandardEnvironment;

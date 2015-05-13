@@ -1,4 +1,4 @@
-package org.liquidfeedback.remotecontrol;
+package org.glottotopia.remotecontrol;
 
 import java.io.File;
 import java.io.FileWriter;

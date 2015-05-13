@@ -16,7 +16,7 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 
 import org.jooq.DSLContext;
-import org.liquidfeedback.generated.tables.pojos.Member;
+import org.glottotopia.generated.tables.pojos.Member;
 import org.springframework.stereotype.Component;
 import org.supercsv.cellprocessor.ift.CellProcessor;
 
