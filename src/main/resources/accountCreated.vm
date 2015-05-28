@@ -1,3 +1,0 @@
-$!{message}
-#if($user) Username: $!{user.username} #end
-Login at: $!{applicationURL}
