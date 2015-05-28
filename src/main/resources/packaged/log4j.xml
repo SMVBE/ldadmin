@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+	<appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss,SSS} %5p %M (%F:%L) - %m%n" />
+		</layout>
+	</appender>
+	
+
+	<logger name="net.sf.ehcache">
+		<level value="WARN" />
+	</logger>
+
+	<logger name="org.springmodules">
+		<level value="WARN" />
+	</logger>
+	<logger name="com.mysql">
+		<level value="WARN" />
+	</logger>
+
+	<logger name="net.sf.navigator">
+		<level value="WARN" />
+	</logger>
+	<logger name="com.gargoylesoftware.htmlunit">
+		<level value="INFO" />
+	</logger>
+
+	<!-- Suppress success logging from InteractiveAuthenticationSuccessEvent -->
+	<logger name="org.springframework.security">
+		<level value="INFO" />
+	</logger>
+	<logger name="org.w3c">
+		<level value="ERROR" />
+	</logger>
+	<logger name="org.apache">
+		<level value="WARN" />
+	</logger>
+
+	<logger name="org.apache.velocity">
+		<level value="WARN" />
+	</logger>
+
+	<!-- Suppress invalid warning messages from JSF -->
+	<logger name="org.apache.myfaces">
+		<level value="WARN" />
+	</logger>
+
+	<!-- Suppress warnings from Struts -->
+	<logger name="org.apache.struts2.util.TextProviderHelper">
+		<level value="WARN" />
+	</logger>
+
+	<logger name="com.opensymphony.xwork2.util.OgnlUtil">
+		<level value="ERROR" />
+	</logger>
+
+	<logger name="com.opensymphony.xwork2.ognl.OgnlValueStack">
+		<level value="ERROR" />
+	</logger>
+
+	<logger name="org.dbunit">
+		<level value="WARN" />
+	</logger>
+
+	<logger name="org.hibernate">
+		<level value="WARN" />
+	</logger>
+	>
+
+	<logger name="org.displaytag">
+		<level value="WARN" />
+	</logger>
+
+	<logger name="org.hibernate.SQL">
+		<level value="WARN" />
+	</logger>
+
+	<logger name="org.springframework">
+		<level value="WARN" />
+	</logger>
+
+	<logger name="org.springframework.jndi">
+		<level value="WARN" />
+	</logger>
+
+
+	<logger name="org.springframework.core.env">
+		<level value="WARN" />
+	</logger>
+
+	<logger name="de.piratenpartei.berlin.ldadmin.app">
+		<level value="DEBUG" />
+	</logger>
+
+	<logger name="de.piratenpartei.berlin.ldadmin.app.tool">
+		<level value="DEBUG" />
+	</logger>
+	<logger name="de.piratenpartei.berlin.ldadmin.app.automation">
+		<level value="DEBUG" />
+	</logger>
+	<logger
+		name="org.springframework.context.support.ResourceBundleMessageSource">
+		<level value="ERROR" />
+	</logger>
+	<logger name="org.apache.commons.validator.ValidatorResources">
+		<level value="WARN" />
+	</logger>
+	<logger name="org.jooq.tools">
+		<level value="WARN" />
+	</logger>
+
+
+	<root>
+		<level value="INFO" />
+		<appender-ref ref="CONSOLE" />
+	</root>
+
+</log4j:configuration>

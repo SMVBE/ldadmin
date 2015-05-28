@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+	<appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss,SSS} %5p %M (%F:%L) - %m%n" />
+		</layout>
+	</appender>
+	<!-- <appender name="ROLL" class="org.apache.log4j.rolling.RollingFileAppender">
+		The active file to log to
+		<param name="file" value="${user.dir}/ldadmin.log" />
+		<param name="append" value="true" />
+		<param name="encoding" value="UTF-8" />
+
+		<rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+			The file to roll to, this is a fairly intelligent parameter, if the 
+				file ends in .gz, it gzips it, based on the date stamp it rolls at that time, 
+				default is yyyy-MM-dd, (rolls at midnight) See: http://logging.apache.org/log4j/companions/extras/apidocs/org/apache/log4j/rolling/TimeBasedRollingPolicy.html
+			<param name="FileNamePattern" value="${user.dir}/ldadmin.%d.log" />
+		</rollingPolicy>
+
+		<layout class="org.apache.log4j.PatternLayout">
+			The log message pattern
+			<param name="ConversionPattern" value="%5p %d{ISO8601} [%t][%x] %c - %m%n" />
+		</layout>
+	</appender> -->
+
+	<logger name="net.sf.ehcache">
+		<level value="WARN" />
+	</logger>
+
+	<logger name="org.springmodules">
+		<level value="WARN" />
+	</logger>
+	<logger name="com.mysql">
+		<level value="WARN" />
+	</logger>
+
+	<logger name="net.sf.navigator">
+		<level value="WARN" />
+	</logger>
+	<logger name="com.gargoylesoftware.htmlunit">
+		<level value="INFO" />
+	</logger>
+
+	<!-- Suppress success logging from InteractiveAuthenticationSuccessEvent -->
+	<logger name="org.springframework.security">
+		<level value="INFO" />
+	</logger>
+	<logger name="org.w3c">
+		<level value="ERROR" />
+	</logger>
+	<logger name="org.apache">
+		<level value="WARN" />
+	</logger>
+
+	<logger name="org.apache.velocity">
+		<level value="WARN" />
+	</logger>
+
+	<!-- Suppress invalid warning messages from JSF -->
+	<logger name="org.apache.myfaces">
+		<level value="WARN" />
+	</logger>
+
+	<!-- Suppress warnings from Struts -->
+	<logger name="org.apache.struts2.util.TextProviderHelper">
+		<level value="WARN" />
+	</logger>
+
+	<logger name="com.opensymphony.xwork2.util.OgnlUtil">
+		<level value="ERROR" />
+	</logger>
+
+	<logger name="com.opensymphony.xwork2.ognl.OgnlValueStack">
+		<level value="ERROR" />
+	</logger>
+
+	<logger name="org.dbunit">
+		<level value="WARN" />
+	</logger>
+
+	<logger name="org.hibernate">
+		<level value="INFO" />
+	</logger>
+
+	<logger name="org.displaytag">
+		<level value="WARN" />
+	</logger>
+
+	<logger name="org.hibernate.SQL">
+		<level value="INFO" />
+	</logger>
+
+	<logger name="org.springframework">
+		<level value="INFO" />
+	</logger>
+
+	<logger name="org.springframework.jndi">
+		<level value="INFO" />
+	</logger>
+
+
+	<logger name="org.springframework.core.env">
+		<level value="WARN" />
+	</logger>
+
+	<logger name="de.piratenpartei.berlin.ldadmin.app">
+		<level value="DEBUG" />
+	</logger>
+
+	<logger name="de.piratenpartei.berlin.ldadmin.app.tool">
+		<level value="DEBUG" />
+	</logger>
+	<logger name="de.piratenpartei.berlin.ldadmin.app.automation">
+		<level value="DEBUG" />
+	</logger>
+	<logger
+		name="org.springframework.context.support.ResourceBundleMessageSource">
+		<level value="ERROR" />
+	</logger>
+	<logger name="org.apache.commons.validator.ValidatorResources">
+		<level value="WARN" />
+	</logger>
+	<logger name="org.jooq.tools">
+		<level value="INFO" />
+	</logger>
+	
+
+	<root>
+		<level value="INFO" />
+		<appender-ref ref="CONSOLE" />
+		<!-- <appender-ref ref="ROLL" /> -->
+	</root>
+
+</log4j:configuration>
